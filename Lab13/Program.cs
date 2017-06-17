@@ -39,8 +39,7 @@ namespace Lab13
 
         static long TrackT(Action action)
         {
-            Stopwatch sw = TrackT(true, action);
-            return sw.ElapsedTicks;
+            return TrackT(true, action).ElapsedTicks;
         }
 
         static void Main(string[] args)
